@@ -2,16 +2,29 @@ import React from 'react';
 import {BrowserRouter, Route, NavLink, Switch} from 'react-router-dom'
 import '../../styles/admin.css';
 import {getUser, removeUserSession} from '../../services/auth.service';
+import axios from 'axios';
+
 
 import GenerateReport from './generateReport';
 import ViewMember from './viewMember';
 import ViewReports from './viewReports';
+import swal from 'sweetalert';
 
 const Admin = (props) => {
     const user = getUser();
-    const logOut = () => {
-        removeUserSession();
-        props.history.push('/');
+    const logOut = (e) => {
+        e.preventDefault();
+        axios.get("http://localhost:5000/api/logout")
+        .then(response => {
+            swal(response.data.message)
+            removeUserSession();
+            props.history.push('/');
+        })
+        .catch(error => {
+            if(error.response.status === 400){
+                swal(error.response.data.message)
+            }
+        })
       };
     return(
         <BrowserRouter>
@@ -38,7 +51,9 @@ const Admin = (props) => {
                         </li>
                         <li>
                             <span></span>
-                            <center><NavLink to="/" onClick={logOut}><p>Log Out</p></NavLink></center>
+                            <center><form onSubmit={e => logOut(e)}>
+                            <NavLink to="/"><p>Log Out</p></NavLink>
+                                </form></center>
                         </li>
                     </ul>
                     </center>

@@ -9,9 +9,19 @@ import Welfare from './welfare';
 
 const Accounts = (props) => {
     const user = getUser();
-    const logOut = () => {
-        removeUserSession();
-        props.history.push('/');
+    const logOut = (e) => {
+        e.preventDefault();
+        axios.get("http://localhost:5000/api/logout")
+        .then(response => {
+            swal(response.data.message)
+            removeUserSession();
+            props.history.push('/');
+        })
+        .catch(error => {
+            if(error.response.status === 400){
+                swal(error.response.data.message)
+            }
+        })
       };
     return(
         <BrowserRouter>
@@ -40,7 +50,9 @@ const Accounts = (props) => {
                 
                     <li>
                         <span></span>
-                        <center><NavLink to="/" onClick={logOut}><p>Log Out</p></NavLink></center>
+                        <center><form onSubmit={e => logOut(e)}>
+                            <NavLink to="/"><p>Log Out</p></NavLink>
+                                </form></center>
                     </li>
                 </ul>
                 </center>
