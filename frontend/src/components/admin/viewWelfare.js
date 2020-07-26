@@ -17,7 +17,7 @@ const ViewWelfare = (props) => {
     Switch(props)
     return (
         <div>
-            <h1>Tithe</h1>
+            <h1>Welfare</h1>
             <div style={{ marginLeft: 167, width: 1010, background: 'white', fontWeight: 'bold', marginBottom: 10, padding: 6 }}>
                 <span>ID: {One.ID}</span><br />
                 <span>Name: {One.name} </span>

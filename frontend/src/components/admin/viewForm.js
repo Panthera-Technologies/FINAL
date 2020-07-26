@@ -153,22 +153,6 @@ export default function Manage(props) {
                             Next of Kin: <input type="type" value={One.name} className="long" />&emsp;&emsp;
                             Relation: <input type="type" value={One.relation} className="name" />
                         </div><br />
-                        <div style={{ display: "flex", justifyContent: "space-between", marginLeft: 400, marginRight: 400 }}>
-                            <button class="btn" onClick={(e) => {
-                                e.preventDefault()
-                                getRole(1, () => {
-                                    swal("Authorized")
-                                })
-                            }
-                            }>Update</button>
-                            <button class="btn" id="del" onClick={(e) => {
-                                e.preventDefault()
-                                getRole(2, () => {
-                                    swal("Authorized")
-                                })
-                            }
-                            }>Delete</button>
-                        </div>
                     </form>
                 </div>
             </div>

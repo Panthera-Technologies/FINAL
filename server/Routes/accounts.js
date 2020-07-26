@@ -14,7 +14,6 @@ router.post('/api/payTithe', (req, res) => {
             if(err) return res.status(400).send({message: err});
             res.send({
                 message: "Paid Successfully!!",
-		doc
             })
         })
     }catch(err){
@@ -24,7 +23,7 @@ router.post('/api/payTithe', (req, res) => {
 
 router.post('/api/payWelfare', (req, res) => {
     try{
-        Welfare.findOneAndUpdate(req.body.ID, req.body, {new:true}, (err,doc)=>{
+        Welfare.findOneAndUpdate({'ID':req.body.ID}, req.body, {new:true}, (err,doc)=>{
             if(err) return res.status(400).send({message: err});
             res.send({
                 message: "Paid Successfully!!"
