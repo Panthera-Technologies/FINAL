@@ -186,7 +186,7 @@ const Welfare = () => {
                                 <td> January</td>
                                 <td><input type="number" id="amount" name="January" value={info.January.amount} onChange={onChange} placeholder="Enter Amount" /></td>
                                 <td>
-                                    <div style={{ display: "flex", justifyContent: "space-between" }} >
+                                    <div style={{ display: "flex"}} >
                                         <input type="date" id="date" name="January" value={info.January.date} onChange={onChange} />
                                         <input type="button" value="Reset Date" name="January" id="date" onClick={reset} />
                                     </div>
@@ -196,7 +196,7 @@ const Welfare = () => {
                                 <td> Feburay</td>
                                 <td><input type="number" id="amount" name="Feburary" value={info.Feburary.amount} onChange={onChange} placeholder="Enter Amount" /></td>
                                 <td>
-                                    <div style={{ display: "flex", justifyContent: "space-between" }} >
+                                    <div style={{ display: "flex"}} >
                                         <input type="date" id="date" name="Feburary" value={info.Feburary.date} onChange={onChange} />
                                         <input type="button" value="Reset Date" name="Feburary" id="date" onClick={reset} />
                                     </div>
@@ -206,7 +206,7 @@ const Welfare = () => {
                                 <td> March</td>
                                 <td><input type="number" id="amount" name="March" value={info.March.amount} onChange={onChange} placeholder="Enter Amount" /></td>
                                 <td>
-                                    <div style={{ display: "flex", justifyContent: "space-between" }} >
+                                    <div style={{ display: "flex"}} >
                                         <input type="date" id="date" name="March" value={info.March.date} onChange={onChange} />
                                         <input type="button" value="Reset Date" name="March" id="date" onClick={reset} />
                                     </div>
@@ -216,7 +216,7 @@ const Welfare = () => {
                                 <td> April</td>
                                 <td><input type="number" id="amount" name="April" value={info.April.amount} onChange={onChange} placeholder="Enter Amount" /></td>
                                 <td>
-                                    <div style={{ display: "flex", justifyContent: "space-between" }} >
+                                    <div style={{ display: "flex" }} >
                                         <input type="date" id="date" name="April" value={info.April.date} onChange={onChange} />
                                         <input type="button" value="Reset Date" name="April" id="date" onClick={reset} />
                                     </div>
@@ -226,7 +226,7 @@ const Welfare = () => {
                                 <td> May</td>
                                 <td><input type="number" id="amount" name="May" value={info.May.amount} onChange={onChange} placeholder="Enter Amount" /></td>
                                 <td>
-                                    <div style={{ display: "flex", justifyContent: "space-between" }} >
+                                    <div style={{ display: "flex" }} >
                                         <input type="date" id="date" name="May" value={info.May.date} onChange={onChange} />
                                         <input type="button" value="Reset Date" name="May" id="date" onClick={reset} />
                                     </div>
@@ -236,7 +236,7 @@ const Welfare = () => {
                                 <td> June</td>
                                 <td><input type="number" id="amount" name="June" value={info.June.amount} onChange={onChange} placeholder="Enter Amount" /></td>
                                 <td>
-                                    <div style={{ display: "flex", justifyContent: "space-between" }} >
+                                    <div style={{ display: "flex" }} >
                                         <input type="date" id="date" name="June" value={info.June.date} onChange={onChange} />
                                         <input type="button" value="Reset Date" name="June" id="date" onClick={reset} />
                                     </div>
@@ -246,7 +246,7 @@ const Welfare = () => {
                                 <td> July</td>
                                 <td><input type="number" id="amount" name="July" value={info.July.amount} onChange={onChange} placeholder="Enter Amount" /></td>
                                 <td>
-                                    <div style={{ display: "flex", justifyContent: "space-between" }} >
+                                    <div style={{ display: "flex" }} >
                                         <input type="date" id="date" name="July" value={info.July.date} onChange={onChange} />
                                         <input type="button" value="Reset Date" name="July" id="date" onClick={reset} />
                                     </div>
@@ -256,7 +256,7 @@ const Welfare = () => {
                                 <td> August</td>
                                 <td><input type="number" id="amount" name="August" value={info.August.amount} onChange={onChange} placeholder="Enter Amount" /></td>
                                 <td>
-                                    <div style={{ display: "flex", justifyContent: "space-between" }} >
+                                    <div style={{ display: "flex" }} >
                                         <input type="date" id="date" name="August" value={info.August.date} onChange={onChange} />
                                         <input type="button" value="Reset Date" name="August" id="date" onClick={reset} />
                                     </div>
@@ -267,7 +267,7 @@ const Welfare = () => {
                                 <td><input type="number" id="amount" name="September" value={info.September.amount} onChange={onChange} placeholder="Enter Amount" /></td>
 
                                 <td>
-                                    <div style={{ display: "flex", justifyContent: "space-between" }} >
+                                    <div style={{ display: "flex"}} >
                                         <input type="date" id="date" name="September" value={info.September.date} onChange={onChange} />
                                         <input type="button" value="Reset Date" name="September" id="date" onClick={reset} />
                                     </div>
@@ -278,7 +278,7 @@ const Welfare = () => {
                                 <td><input type="number" id="amount" name="October" value={info.October.amount} onChange={onChange} placeholder="Enter Amount" /></td>
 
                                 <td>
-                                    <div style={{ display: "flex", justifyContent: "space-between" }} >
+                                    <div style={{ display: "flex"}} >
                                         <input type="date" id="date" name="October" value={info.October.date} onChange={onChange} />
                                         <input type="button" value="Reset Date" name="October" id="date" onClick={reset} />
                                     </div>
@@ -289,7 +289,7 @@ const Welfare = () => {
                                 <td><input type="number" id="amount" name="November" value={info.November.amount} onChange={onChange} placeholder="Enter Amount" /></td>
 
                                 <td>
-                                    <div style={{ display: "flex", justifyContent: "space-between" }} >
+                                    <div style={{ display: "flex" }} >
                                         <input type="date" id="date" name="November" value={info.November.date} onChange={onChange} />
                                         <input type="button" value="Reset Date" name="November" id="date" onClick={reset} />
                                     </div>
@@ -301,7 +301,7 @@ const Welfare = () => {
                                 </td>
 
                                 <td>
-                                    <div style={{ display: "flex", justifyContent: "space-between" }} >
+                                    <div style={{ display: "flex" }} >
                                         <input type="date" id="date" name="December" value={info.December.date} onChange={onChange} />
                                         <input type="button" value="Reset Date" name="December" id="date" onClick={reset} />
                                     </div>
