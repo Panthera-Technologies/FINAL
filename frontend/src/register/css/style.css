@@ -354,7 +354,8 @@ input {
   display: block;
   border: none;
   border-bottom: 1px solid #999;
-  padding: 6px 30px;
+  margin-top: 5px;
+  padding: 5px 15px;
   font-family: Poppins;
   box-sizing: border-box; }
   input::-webkit-input-placeholder {
@@ -426,9 +427,9 @@ input[type=checkbox]:not(old):checked + label > span:before {
   font-weight: bold; }
 
   .name{
-    padding: 3px 20px;
+    padding: 3px 25px;
     font-family: Poppins;
-    margin-top: 5px;
+    margin-top: 14px;
     width: 100%;
   }
 

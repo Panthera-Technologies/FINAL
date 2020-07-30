@@ -201,8 +201,8 @@ h2 {
   font-size: 36px; }
 
 .main {
-  background: #d6f3ff;
-  padding: 20px 0; }
+  padding: 20px 0; 
+}
 
 .clear {
   clear: both; }
@@ -210,9 +210,9 @@ h2 {
 body {
   font-size: 13px;
   color: #222;
-  background:#d6f3ff;
   font-weight: 400;
-  font-family: Poppins; }
+  font-family: Poppins; 
+}
 
 
 .container {

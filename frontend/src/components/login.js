@@ -8,6 +8,7 @@ import swal from 'sweetalert'
 
 
 import logo from './church-logo.png'
+import cover from './church-background.jpg'
 
 import {setUserSession} from "../services/auth.service";
 
@@ -65,7 +66,7 @@ const Login = (props) => {
 
 
   return (
-    <div>
+    <div >
       <div className="header">
         <div>
          <img className="logo" src={logo} alt="logo"/>
@@ -76,7 +77,7 @@ const Login = (props) => {
         </div>
                       
       </div>
-      <div className="main">
+      <div className="main"  style={{backgroundImage: `url(${cover})`}} >
           <center className="sub-head">CHURCH MANAGEMENT SYSTEM</center>
           <section className="sign-in">
             <div className="container">

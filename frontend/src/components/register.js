@@ -9,6 +9,7 @@ import swal from 'sweetalert'
 import '../register/css/style.css';
 
 import logo from './church-logo.png'
+import cover from './background.jpg'
 
 
 const Register = (props) => {
@@ -90,7 +91,7 @@ const Register = (props) => {
         </div>
                        
       </div>
-      <div className="main">
+      <div className="main" style={{backgroundImage: `url(${cover})`}}>
         <center className="sub-head">CHURCH MANAGEMENT SYSTEM</center>
         <section className="sign-in">
           <div className="container1">
